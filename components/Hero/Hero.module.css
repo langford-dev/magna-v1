@@ -1,0 +1,29 @@
+/* .clip::before,
+.clip::after {
+  position: absolute;
+  content: "";
+}
+.clip,
+.clip::before {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clip::before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+.clip::after {
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 70%;
+  background: rgb(81, 80, 80);
+  backdrop-filter: blur(50%);
+} */
