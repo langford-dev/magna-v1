@@ -1,4 +1,4 @@
-import img1 from "../public/hero1.png";
+import magna2 from "../public/assets/magna2.png";
 import Image from "next/image"
 import Cursor from "../components/Cursor"
 import FAB from "../components/FAB"
@@ -20,8 +20,8 @@ const About = () => {
                     </div>
                     <div className="flex py-28 items-center justify-center">
                         <Image
-                            src={img1}
-                            alt="magna banner image"
+                            src={magna2}
+                            alt="magna background image"
                             className={`lg:w-[60%] lg:h-[60%] w-[100%] h-[100%] object-cover`}
                         />
                     </div>
