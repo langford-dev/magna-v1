@@ -12,12 +12,16 @@ const Navbar = () => {
         </div>
       </Link>
       <nav className="flex lg:scale-100 -mr-[30px] scale-[0.8] items-center py-3">
-        <p className={router.pathname === "/" ? styles.activeNav : styles.nav}>
-          <Link href="/">HOME</Link>
-        </p>
-        <p className={router.pathname === "/about" ? styles.activeNav : styles.nav}>
-          <Link href="/about">ABOUT</Link>
-        </p>
+        <Link href="/">
+          <p className={router.pathname === "/" ? styles.activeNav : styles.nav}>
+            HOME
+          </p>
+        </Link>
+        <Link href="/about">
+          <p className={router.pathname === "/about" ? styles.activeNav : styles.nav}>
+            ABOUT
+          </p>
+        </Link>
         <div className={styles.nav}>
           <div className="mr-1">
             <Image src="/assets/lock.svg" width={20} height={20} alt="lock" />
