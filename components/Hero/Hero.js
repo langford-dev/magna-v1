@@ -9,7 +9,7 @@ const Hero = () => {
         <Image
           src={heroOne}
           alt="magna banner image"
-          className={`w-[88vw] h-[88vh] object-cover`}
+          className={`w-[100vw] h-[100vh] object-cover`}
         />
       </div>
       <FAB />
