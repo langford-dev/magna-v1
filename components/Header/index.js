@@ -11,7 +11,7 @@ const Navbar = () => {
           Magna
         </div>
       </Link>
-      <nav className="flex items-center py-3">
+      <nav className="flex lg:scale-100 -mr-[30px] scale-[0.8] items-center py-3">
         <p className={router.pathname === "/" ? styles.activeNav : styles.nav}>
           <Link href="/">HOME</Link>
         </p>
