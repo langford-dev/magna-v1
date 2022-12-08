@@ -1,4 +1,4 @@
-import magna1 from "../../public/assets/magna1.png";
+import magna1 from "../../public/assets/magna1.webp";
 import Image from "next/image";
 
 const Hero = () => {

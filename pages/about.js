@@ -1,4 +1,4 @@
-import magna2 from "../public/assets/magna2.png";
+import magna2 from "../public/assets/magna2.webp";
 import Image from "next/image"
 import Cursor from "../components/Cursor"
 import FAB from "../components/FAB"
