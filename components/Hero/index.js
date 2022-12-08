@@ -10,12 +10,14 @@ const Hero = () => {
           src={magna1}
           alt="magna background image"
           className={`h-full w-full hidden md:block object-cover`}
+          priority
         />
         <Image
           // onMouseOver={toggle}
           src={heroMobile}
           alt="name"
-          className={`block h-screen w-screen object-contain md:hidden`}
+          className={`block h-screen w-screen object-contain lg:hidden`}
+          priority
         />
       </div>
     </div>
