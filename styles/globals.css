@@ -1,3 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  text-transform: uppercase;
+  font-family: "Exo 2", sans-serif;
+  font-size: small;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+html {
+  /* background: #EBE7E4; */
+  /* background: linear-gradient(45deg); */
+  cursor: none;
+  overflow-x: hidden;
+  background: linear-gradient(
+    45deg,
+    #040014,
+    #3b1d24,
+    #621b26,
+    #1b0c18,
+    #1b1e3d
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
+  /* background: red; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fab {
+  box-shadow: 8px 7px 17px #0d0d0d42;
+}
+
+.cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  pointer-events: none;
+  animation: pointer 1s infinite;
+
+  background: #c13341;
+  border: 3px solid #1a1f3e;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  /* border-radius: 9999px; */
+  /* box-shadow: 0 0 30px 6px #c13341af; */
+  /* 0 0 50px 60px black;  */
+  /* 0 0 70px 90px #2d2d2d; */
+}
+
+@keyframes pointer {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* .title {
+  text-stroke: 2px red;
+  -webkit-text-stroke: 2px red;
+  -moz-text-stroke: 2px red;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1326;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #81242d;
+  border-radius: 2px;
+}
