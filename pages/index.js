@@ -1,11 +1,11 @@
 import Cursor from "../components/Cursor";
 import Hero from "../components/Hero/Hero";
-import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Hero />
       <Cursor />
       <div className="pointer" />
