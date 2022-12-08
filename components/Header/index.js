@@ -11,7 +11,7 @@ const Navbar = () => {
           Magna
         </div>
       </Link>
-      <nav className="flex lg:scale-100 -mr-[30px] lg:mr-0 scale-[0.8] items-center py-3">
+      <nav className="hidden sm:flex items-center py-3">
         <Link href="/">
           <p className={router.pathname === "/" ? styles.activeNav : styles.nav}>
             HOME
@@ -29,13 +29,17 @@ const Navbar = () => {
           <p >Connect</p>
         </div>
       </nav>
+      <div className={styles.menuBtn}>
+        <Image src="/assets/menu.svg" width="40" height="40" alt="menu" />
+      </div>
     </div>
-  </header>
+  </header >
 };
 
 const styles = {
   nav: `text-[#fff] hover:text-[#C13341] m-2 mt-0 h-max w-max flex items-center justify-center bg-[#ffffff12] hover:bg-[#A3B1AD2B] cursor-pointer transition-all rounded-md p-5 py-2`,
   activeNav: `hover:text-[#fff] text-[#C13341] m-2 mt-0 h-max w-max flex items-center justify-center hover:bg-[#ffffff12] bg-[#A3B1AD2B] cursor-pointer transition-all rounded-md p-5 py-2`,
+  menuBtn: `bg-[#ffffff12] px-3 block sm:hidden`,
 }
 
 export default Navbar;
