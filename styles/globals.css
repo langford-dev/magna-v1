@@ -34,7 +34,9 @@ html {
   /* height: 100vh; */
   /* background: red; */
 }
-
+body{
+  /* background:  #621b26 ; */
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
