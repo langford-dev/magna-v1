@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href="/">
             <p
               className={
-                router.pathname === "/" ? styles.activeNav : styles.nav
+                router.pathname === "/" ? styles.activeNav : styles.navLink
               }
             >
               HOME
@@ -33,15 +33,15 @@ const Navbar = () => {
           <Link href="/about">
             <p
               className={
-                router.pathname === "/about" ? styles.activeNav : styles.nav
+                router.pathname === "/about" ? styles.activeNav : styles.navLink
               }
             >
               ABOUT
             </p>
           </Link>
-          <div className={styles.nav}>
+          <div className={styles.navLink}>
             <div className="mr-1">
-              <Image src="/assets/lock.svg" width={20} height={20} alt="lock" />
+              <Image src="/assets/lock.svg" width={17} height={17} alt="lock" />
             </div>
             <p>Connect</p>
           </div>
@@ -50,10 +50,10 @@ const Navbar = () => {
           <Image
             onClick={showMenu}
             src={menu ? "/assets/close.svg" : "/assets/menu.svg"}
-            width={menu ? 25 : 40}
+            width="40"
             height="40"
-            alt="menu"
-            className={menu && "invert"}
+            alt="menu button"
+            className="menu"
           />
           <Dropdown options={menu} />
         </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
 };
 
 const styles = {
-  nav: `text-[#fff] hover:text-[#C13341] m-2 mt-0 h-max w-max flex items-center justify-center bg-[#ffffff12] hover:bg-[#A3B1AD2B] cursor-pointer transition-all rounded-md p-5 py-2 cursor-none`,
+  navLink: `text-[#fff] hover:text-[#C13341] m-2 mt-0 h-max w-max flex items-center justify-center bg-[#ffffff12] hover:bg-[#A3B1AD2B] cursor-pointer transition-all rounded-md p-5 py-2 cursor-none`,
   activeNav: `hover:text-[#fff] text-[#C13341] m-2 mt-0 h-max w-max flex items-center justify-center hover:bg-[#ffffff12] bg-[#A3B1AD2B] cursor-pointer transition-all rounded-md p-5 py-2 cursor-none `,
   menuBtn: `bg-[#ffffff12] px-3 block sm:hidden cursor-none`,
 };
