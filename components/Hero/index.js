@@ -9,7 +9,7 @@ const Hero = () => {
         <Image
           src={magna1}
           alt="magna background image"
-          className={`h-[90%] w-[90%] object-cover md:block hidden`}
+          className={`h-[90%] w-[90%] object-cover lg:block hidden`}
           priority
         />
         <Image
