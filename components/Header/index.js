@@ -41,7 +41,7 @@ const Navbar = () => {
           </Link>
           <div className={styles.navLink}>
             <div className="mr-1">
-              <Image src="/assets/lock.svg" width={20} height={20} alt="lock" />
+              <Image src="/assets/lock.svg" width={17} height={17} alt="lock" />
             </div>
             <p>Connect</p>
           </div>
