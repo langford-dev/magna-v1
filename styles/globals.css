@@ -10,9 +10,10 @@
   font-size: small;
   font-weight: 500;
   letter-spacing: 1.3px;
-  border: none;
+  /* border: none; */
   outline: none;
   user-select: none;
+  cursor: none;
 }
 
 html {
@@ -49,7 +50,10 @@ html {
 .fab {
   box-shadow: 8px 7px 17px #0d0d0d42;
 }
-
+a{
+  cursor:none;
+  /* pointer-events: none; */
+}
 .cursor {
   position: fixed;
   top: 50%;

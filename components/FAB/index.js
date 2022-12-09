@@ -10,7 +10,7 @@ const FAB = () => {
 }
 
 const styles = {
-    fab: `fab active:scale-90 transition-all cursor-pointer bg-[#C13341] w-max p-1 px-5 text-[#fff] h-[40px] rounded-[12px] flex items-center justify-center fixed bottom-[30px] right-[30px]`
+    fab: `fab active:scale-90 transition-all cursor-none bg-[#C13341] w-max p-1 px-5 text-[#fff] h-[40px] rounded-[12px] flex items-center justify-center fixed bottom-[30px] right-[30px]`
 }
 
 export default FAB
