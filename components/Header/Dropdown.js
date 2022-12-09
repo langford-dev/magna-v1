@@ -1,9 +1,14 @@
+import Link from "next/link";
 const Dropdown = ({ options }) => {
   return (
     <div className={`${!options && "hidden"} ${styles.menu} `}>
       <nav>
-        <p className={styles.menuBtn}>home</p>
-        <p className={styles.menuBtn}>About</p>
+        <Link href={`/`}>
+          <p className={styles.menuBtn}>home</p>
+        </Link>
+        <Link href={`/about`}>
+          <p className={styles.menuBtn}>About</p>
+        </Link>
         <p className={styles.menuBtn}>connect</p>
       </nav>
     </div>
