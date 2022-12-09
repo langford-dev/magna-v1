@@ -1,32 +1,32 @@
 export const members = [
   {
     id: 1,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
   {
     id: 2,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
   {
     id: 3,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
   {
     id: 4,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
   {
     id: 5,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
   {
     id: 6,
-    imageUrl: `https://res.cloudinary.com/devsteveserver/image/upload/v1659019979/profile_loza8q.png`,
-    name: `Stephen`,
+    imageUrl: `/assets/pfps/1.jpg`,
+    name: `Magna`,
   },
 ];
