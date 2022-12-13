@@ -23,7 +23,7 @@ const Teams = () => {
   );
 };
 const styles = {
-  image: `bg-contain rounded-full rounded-full`,
+  image: `bg-contain rounded-full`,
   text: `text-2xl pt-4`,
   container: `m-auto min-h-[80vh] max-w-[1000px] leading-[30px] px-6`,
   header: `my-[20px] mb-[50px] w-max rounded-[12px] bg-[#C13341] p-2 px-5 text-3xl font-bold lg:mx-auto lg:text-6xl`,
