@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Dropdown from "./Dropdown";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -10,8 +10,12 @@ const Navbar = () => {
   const showMenu = () => {
     setMenu((prev) => !prev);
   };
-
   const router = useRouter();
+  useEffect(() => {
+    // This effect will be called whenever the route changes
+    setMenu(false);
+  }, [router]);
+
   return (
     <header className="fixed w-screen p-4">
       <div className="m-auto flex max-w-[1800px] items-center justify-between">
