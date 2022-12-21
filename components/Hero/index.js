@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center transition-shadow">
-      <div className="h-screen w-screen flex items-center justify-center">
+    <div className={styles.container}>
+      <div className={styles.imgCon}>
         <Image
           src={magna1}
           alt="magna background image"
-          className={`h-[90%] w-[90%] object-cover lg:block hidden`}
+          className={`h-full w-[90%] object-cover lg:block hidden`}
           priority
         />
         <Image
@@ -21,6 +21,11 @@ const Hero = () => {
       </div>
     </div>
   );
+};
+const styles = {
+  container: `flex items-center justify-center transition-shadow`,
+  imgCon: `h-screen  w-screen flex items-center justify-center`,
+  image:``
 };
 
 export default Hero;
