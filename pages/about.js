@@ -2,8 +2,7 @@ import magna2 from "../public/assets/magna2.webp";
 import Image from "next/image";
 import Cursor from "../components/Cursor";
 import FAB from "../components/FAB";
-import Header from "../components/Header";
-import Teams from "../components/Teams";
+import Header from "../components/Header"; 
 
 const About = () => {
   return (
@@ -76,7 +75,7 @@ const About = () => {
             </p>
           </section>
         </div>
-        <Teams />
+        {/* <Teams /> */}
       </div>
       <div className="pointer" />
     </>
@@ -88,7 +87,7 @@ const styles = {
   title: `my-[20px] mb-[50px] w-max rounded-[12px] bg-[#C13341] p-2 px-5 text-3xl font-bold lg:mx-auto lg:text-6xl`,
   section: `m-auto leading-[30px]`,
   image: `h-[100%] w-[100%] object-cover lg:h-[60%] lg:w-[60%]`,
-  imgContainer:`flex items-center justify-center py-28`,
+  imgContainer: `flex items-center justify-center py-28`,
 };
 
 export default About;
