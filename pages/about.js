@@ -2,14 +2,11 @@ import magna2 from "../public/assets/magna2.webp";
 import Image from "next/image";
 import Cursor from "../components/Cursor";
 import FAB from "../components/FAB";
-import Header from "../components/Header"; 
+import Header from "../components/Header";
 
 const About = () => {
   return (
     <>
-      <Header />
-      <Cursor />
-      <FAB />
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <section className={`${styles.section} max-w-[1000px]`}>
@@ -77,7 +74,6 @@ const About = () => {
         </div>
         {/* <Teams /> */}
       </div>
-      <div className="pointer" />
     </>
   );
 };
