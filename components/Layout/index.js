@@ -1,6 +1,5 @@
 import React from 'react'
 import Cursor from "../Cursor";
-import FAB from "../FAB";
 import Header from "../Header";
 
 const Layout = ({children}) => {
@@ -8,7 +7,6 @@ const Layout = ({children}) => {
     <>
       <Header />
       <Cursor />
-      <FAB />
       {children}
       <div className="pointer" />
     </>

@@ -9,7 +9,7 @@ const Hero = () => {
         <Image
           src={magna1}
           alt="magna background image"
-          className={`h-full w-[90%] object-cover lg:block hidden`}
+          className={`w-[80%] object-cover lg:block hidden`}
           priority
         />
         <Image
@@ -24,7 +24,7 @@ const Hero = () => {
 };
 const styles = {
   container: `flex items-center justify-center transition-shadow`,
-  imgCon: `h-screen  w-screen flex items-center justify-center`,
+  imgCon: `h-screen w-screen flex items-center justify-center`,
   image:``
 };
 
