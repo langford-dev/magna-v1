@@ -7,8 +7,8 @@ import Header from "../components/Header";
 const About = () => {
   return (
     <>
-      <Header />
-      <Cursor />
+      {/* <Header />
+      <Cursor /> */}
       <FAB />
       <div className={styles.wrapper}>
         <div className={styles.container}>
