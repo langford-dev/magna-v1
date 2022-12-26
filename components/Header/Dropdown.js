@@ -6,13 +6,27 @@ const Dropdown = ({ options }) => {
   const router = useRouter();
   return (
     <div className="drawer">
-      <div className={`${!options && "hidden"} ${styles.menu} `}>
+      <div className={`${options ? "hidden" : ""} ${styles.menu} `}>
         <nav>
           <Link href={`/`}>
-            <p className={router.pathname === "/" ? styles.activeNavLink : styles.navLink}>HOME</p>
+            <p
+              className={
+                router.pathname === "/" ? styles.activeNavLink : styles.navLink
+              }
+            >
+              HOME
+            </p>
           </Link>
           <Link href={`/about`}>
-            <p className={router.pathname === "/about" ? styles.activeNavLink : styles.navLink}>ABOUT</p>
+            <p
+              className={
+                router.pathname === "/about"
+                  ? styles.activeNavLink
+                  : styles.navLink
+              }
+            >
+              ABOUT
+            </p>
           </Link>
 
           <div className={styles.navLink}>
