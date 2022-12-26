@@ -73,7 +73,6 @@ const About = () => {
           </section>
         </div>
       </div>
-      {/* <div className="pointer" /> */}
     </>
   );
 };
