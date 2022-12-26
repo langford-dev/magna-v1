@@ -3,20 +3,9 @@ import Link from "next/link";
 import Dropdown from "./Dropdown";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import { links } from "../../constants/Links";
 
 const Navbar = () => {
-  const links = [
-    {
-      to: "/",
-      path: "/",
-      title: "HOME",
-    },
-    {
-      to: "/about",
-      path: "/about",
-      title: "ABOUT",
-    },
-  ];
   const [menu, setMenu] = useState(true);
 
   const showMenu = () => {
