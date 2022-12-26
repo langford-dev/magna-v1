@@ -9,13 +9,13 @@ const Hero = () => {
         <Image
           src={magna1}
           alt="magna background image"
-          className={`w-[80%] object-cover lg:block hidden`}
+          className={styles.imageDesk}
           priority
         />
         <Image
           src={magna3}
           alt="magna background image"
-          className={`h-screen w-screen object-contain block lg:hidden`}
+          className={styles.imageMobile}
           priority
         />
       </div>
@@ -25,7 +25,8 @@ const Hero = () => {
 const styles = {
   container: `flex items-center justify-center transition-shadow`,
   imgCon: `h-screen w-screen flex items-center justify-center`,
-  image:``
+  imageDesk: `w-[80%] object-cover lg:block hidden`,
+  imageMobile: `h-screen w-screen object-contain block lg:hidden`,
 };
 
 export default Hero;
