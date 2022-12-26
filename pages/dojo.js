@@ -14,8 +14,8 @@ const Dojo = () => {
 
   return (
     <>
-      <Header />
-      <Cursor />
+      {/* <Header />
+      <Cursor /> */}
       <div className="flex items-center justify-center overflow-hidden transition-shadow">
         <div className="flex h-screen w-screen items-center justify-center">
           <Link

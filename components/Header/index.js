@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Dropdown from "./Dropdown";
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -22,6 +22,7 @@ const Navbar = () => {
   const showMenu = () => {
     setMenu((prev) => !prev);
   };
+
   const router = useRouter();
   useEffect(() => {
     setMenu(true);
