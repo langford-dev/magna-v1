@@ -37,12 +37,12 @@ const Navbar = () => {
               </p>
             </Link>
           ))}
-          <div className={styles.navLink}>
+          <Link href="/mint" className={styles.navLink}>
             <div className="mr-1">
               <Image src="/assets/lock.svg" width={17} height={17} alt="lock" />
             </div>
             <p>Connect</p>
-          </div>
+          </Link>
         </nav>
         <div className={styles.menuBtn}>
           <Image
